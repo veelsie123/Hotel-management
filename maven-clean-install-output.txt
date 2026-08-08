@@ -1,0 +1,552 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< com.example:demo >--------------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ demo ---
+[INFO] Deleting C:\Hotel Management System\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ demo ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ demo ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 28 source files with javac [debug release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ demo ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ demo ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 6 source files with javac [debug release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ demo ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.demo.CustomerPaymentFlowIntegrationTest
+15:22:29.791 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.demo.CustomerPaymentFlowIntegrationTest]: CustomerPaymentFlowIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:22:30.056 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.CustomerPaymentFlowIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-08-08T15:22:31.037+03:00  INFO 10468 --- [           main] c.e.d.CustomerPaymentFlowIntegrationTest : Starting CustomerPaymentFlowIntegrationTest using Java 26.0.1 with PID 10468 (started by pinga in C:\Hotel Management System)
+2026-08-08T15:22:31.040+03:00  INFO 10468 --- [           main] c.e.d.CustomerPaymentFlowIntegrationTest : The following 1 profile is active: "test"
+2026-08-08T15:22:33.031+03:00  INFO 10468 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-08T15:22:33.205+03:00  INFO 10468 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 152 ms. Found 5 JPA repository interfaces.
+2026-08-08T15:22:34.643+03:00  INFO 10468 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-08T15:22:35.141+03:00  INFO 10468 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-08-08T15:22:35.148+03:00  INFO 10468 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-08T15:22:35.485+03:00  INFO 10468 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.22.3 by Redgate
+2026-08-08T15:22:35.485+03:00  INFO 10468 --- [           main] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
+2026-08-08T15:22:35.485+03:00  INFO 10468 --- [           main] o.f.c.internal.license.VersionPrinter    : 
+2026-08-08T15:22:35.605+03:00  INFO 10468 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:testdb (H2 2.2)
+2026-08-08T15:22:35.620+03:00  WARN 10468 --- [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2026-08-08T15:22:35.688+03:00  INFO 10468 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-08-08T15:22:35.697+03:00  INFO 10468 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.048s)
+2026-08-08T15:22:35.716+03:00  INFO 10468 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-08-08T15:22:35.776+03:00  INFO 10468 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-08-08T15:22:35.796+03:00  INFO 10468 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - init"
+2026-08-08T15:22:35.880+03:00  INFO 10468 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "2 - seed data"
+2026-08-08T15:22:35.896+03:00  INFO 10468 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "PUBLIC", now at version v2 (execution time 00:00.070s)
+2026-08-08T15:22:36.128+03:00  INFO 10468 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-08T15:22:36.300+03:00  INFO 10468 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-08-08T15:22:36.414+03:00  INFO 10468 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-08-08T15:22:37.003+03:00  INFO 10468 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-08T15:22:40.219+03:00  INFO 10468 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-08T15:22:40.232+03:00  INFO 10468 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-08T15:22:41.481+03:00  INFO 10468 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-08T15:22:42.551+03:00  WARN 10468 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-08T15:22:43.289+03:00  INFO 10468 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@48e7e2ca, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b557402, org.springframework.security.web.context.SecurityContextHolderFilter@4df3b838, org.springframework.security.web.header.HeaderWriterFilter@5259469d, org.springframework.web.filter.CorsFilter@71a2a9a0, org.springframework.security.web.authentication.logout.LogoutFilter@3a69c81e, com.example.demo.security.JwtAuthenticationFilter@189fe8af, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2efda33d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71dbfe64, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f99b8c4, org.springframework.security.web.session.SessionManagementFilter@4096a622, org.springframework.security.web.access.ExceptionTranslationFilter@3ec6bc6f, org.springframework.security.web.access.intercept.AuthorizationFilter@7614beba]
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/pinga/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+System.Management.Automation.RemoteException
+2026-08-08T15:22:44.204+03:00  INFO 10468 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-08-08T15:22:44.205+03:00  INFO 10468 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-08-08T15:22:44.210+03:00  INFO 10468 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2026-08-08T15:22:44.292+03:00  INFO 10468 --- [           main] c.e.d.CustomerPaymentFlowIntegrationTest : Started CustomerPaymentFlowIntegrationTest in 13.953 seconds (process running for 16.265)
+2026-08-08T15:22:44.798+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        users u1_0
+2026-08-08T15:22:45.269+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (password, role, username, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        users
+        (password, role, username, id) 
+    values
+        (?, ?, ?, default)
+2026-08-08T15:22:45.514+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (password, role, username, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        users
+        (password, role, username, id) 
+    values
+        (?, ?, ?, default)
+2026-08-08T15:22:45.529+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        customer c1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        customer c1_0
+2026-08-08T15:22:45.537+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        users u1_0
+2026-08-08T15:22:45.544+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        customer c1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        customer c1_0
+2026-08-08T15:22:45.553+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        room r1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        room r1_0
+2026-08-08T15:22:45.565+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        reservation r1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        reservation r1_0
+2026-08-08T15:22:45.590+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        payment p1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        payment p1_0
+DataLoader complete: users=2, customers=2, rooms=2, reservations=0, payments=0
+WARNING: A Java agent has been loaded dynamically (C:\Users\pinga\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-08-08T15:22:46.675+03:00  WARN 10468 --- [           main] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/auth/login' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-08-08T15:22:46.975+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-08-08T15:22:47.441+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        customer
+        (email, first_name, last_name, phone, id) 
+    values
+        (?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        customer
+        (email, first_name, last_name, phone, id) 
+    values
+        (?, ?, ?, ?, default)
+2026-08-08T15:22:47.531+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        case 
+            when count(r1_0.id)>0 
+                then true 
+            else false 
+        end 
+    from
+        reservation r1_0 
+    where
+        r1_0.room_id=? 
+        and r1_0.check_in<? 
+        and r1_0.check_out>?
+Hibernate: 
+    select
+        case 
+            when count(r1_0.id)>0 
+                then true 
+            else false 
+        end 
+    from
+        reservation r1_0 
+    where
+        r1_0.room_id=? 
+        and r1_0.check_in<? 
+        and r1_0.check_out>?
+2026-08-08T15:22:47.552+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone 
+    from
+        customer c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone 
+    from
+        customer c1_0 
+    where
+        c1_0.id=?
+2026-08-08T15:22:47.561+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.number,
+        r1_0.price_per_night,
+        r1_0.type 
+    from
+        room r1_0 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.number,
+        r1_0.price_per_night,
+        r1_0.type 
+    from
+        room r1_0 
+    where
+        r1_0.id=?
+2026-08-08T15:22:47.569+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reservation
+        (check_in, check_out, customer_id, room_id, id) 
+    values
+        (?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        reservation
+        (check_in, check_out, customer_id, room_id, id) 
+    values
+        (?, ?, ?, ?, default)
+2026-08-08T15:22:47.618+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.check_in,
+        r1_0.check_out,
+        c1_0.id,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone,
+        p1_0.id,
+        p1_0.amount,
+        p1_0.method,
+        p1_0.paid_at,
+        r2_0.id,
+        r2_0.number,
+        r2_0.price_per_night,
+        r2_0.type 
+    from
+        reservation r1_0 
+    left join
+        customer c1_0 
+            on c1_0.id=r1_0.customer_id 
+    left join
+        payment p1_0 
+            on r1_0.id=p1_0.reservation_id 
+    left join
+        room r2_0 
+            on r2_0.id=r1_0.room_id 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.check_in,
+        r1_0.check_out,
+        c1_0.id,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone,
+        p1_0.id,
+        p1_0.amount,
+        p1_0.method,
+        p1_0.paid_at,
+        r2_0.id,
+        r2_0.number,
+        r2_0.price_per_night,
+        r2_0.type 
+    from
+        reservation r1_0 
+    left join
+        customer c1_0 
+            on c1_0.id=r1_0.customer_id 
+    left join
+        payment p1_0 
+            on r1_0.id=p1_0.reservation_id 
+    left join
+        room r2_0 
+            on r2_0.id=r1_0.room_id 
+    where
+        r1_0.id=?
+2026-08-08T15:22:47.632+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        payment
+        (amount, method, paid_at, reservation_id, id) 
+    values
+        (?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        payment
+        (amount, method, paid_at, reservation_id, id) 
+    values
+        (?, ?, ?, ?, default)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.18 s -- in com.example.demo.CustomerPaymentFlowIntegrationTest
+[INFO] Running com.example.demo.ReservationControllerIntegrationTest
+2026-08-08T15:22:47.701+03:00  INFO 10468 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.demo.ReservationControllerIntegrationTest]: ReservationControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-08T15:22:47.712+03:00  INFO 10468 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.ReservationControllerIntegrationTest
+2026-08-08T15:22:47.750+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-08-08T15:22:47.968+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        case 
+            when count(r1_0.id)>0 
+                then true 
+            else false 
+        end 
+    from
+        reservation r1_0 
+    where
+        r1_0.room_id=? 
+        and r1_0.check_in<? 
+        and r1_0.check_out>?
+Hibernate: 
+    select
+        case 
+            when count(r1_0.id)>0 
+                then true 
+            else false 
+        end 
+    from
+        reservation r1_0 
+    where
+        r1_0.room_id=? 
+        and r1_0.check_in<? 
+        and r1_0.check_out>?
+2026-08-08T15:22:47.974+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone 
+    from
+        customer c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone 
+    from
+        customer c1_0 
+    where
+        c1_0.id=?
+2026-08-08T15:22:47.979+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.number,
+        r1_0.price_per_night,
+        r1_0.type 
+    from
+        room r1_0 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.number,
+        r1_0.price_per_night,
+        r1_0.type 
+    from
+        room r1_0 
+    where
+        r1_0.id=?
+2026-08-08T15:22:47.982+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        reservation
+        (check_in, check_out, customer_id, room_id, id) 
+    values
+        (?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        reservation
+        (check_in, check_out, customer_id, room_id, id) 
+    values
+        (?, ?, ?, ?, default)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.301 s -- in com.example.demo.ReservationControllerIntegrationTest
+[INFO] Running com.example.demo.RoomControllerIntegrationTest
+2026-08-08T15:22:48.014+03:00  INFO 10468 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.demo.RoomControllerIntegrationTest]: RoomControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-08T15:22:48.025+03:00  INFO 10468 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.RoomControllerIntegrationTest
+2026-08-08T15:22:48.073+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.password,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-08-08T15:22:48.249+03:00 DEBUG 10468 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.number,
+        r1_0.price_per_night,
+        r1_0.type 
+    from
+        room r1_0
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.number,
+        r1_0.price_per_night,
+        r1_0.type 
+    from
+        room r1_0
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.257 s -- in com.example.demo.RoomControllerIntegrationTest
+[INFO] Running com.example.demo.security.JwtUtilTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s -- in com.example.demo.security.JwtUtilTest
+[INFO] Running com.example.demo.service.PaymentServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.140 s -- in com.example.demo.service.PaymentServiceTest
+[INFO] Running com.example.demo.service.ReservationServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.654 s -- in com.example.demo.service.ReservationServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ demo ---
+[INFO] Building jar: C:\Hotel Management System\target\demo-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.2.0:repackage (repackage) @ demo ---
+[INFO] Replacing main artifact C:\Hotel Management System\target\demo-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Hotel Management System\target\demo-0.0.1-SNAPSHOT.jar.original
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ demo ---
+[INFO] Installing C:\Hotel Management System\pom.xml to C:\Users\pinga\.m2\repository\com\example\demo\0.0.1-SNAPSHOT\demo-0.0.1-SNAPSHOT.pom
+[INFO] Installing C:\Hotel Management System\target\demo-0.0.1-SNAPSHOT.jar to C:\Users\pinga\.m2\repository\com\example\demo\0.0.1-SNAPSHOT\demo-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  37.137 s
+[INFO] Finished at: 2026-08-08T15:22:54+03:00
+[INFO] ------------------------------------------------------------------------
